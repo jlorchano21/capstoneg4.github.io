@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Lugrasimo&family=Ubuntu&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Style the navigation bar */
+nav {
+  background-color: #e1b12c;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+nav ul li {
+  float: right;
+}
+
+nav ul li a {
+  display: block;
+  color: #3d3d3d;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: 'Courgette', cursive;
+  font-size: larger;
+}
+
+nav ul li a:hover {
+  background-color: #f6e58d;
+}
+
+  /*carousel*/
+  .smallogan p{
+
+    font-weight: 100;
+    color: whitesmoke;
+    font-family: 'Lugrasimo', cursive;
+  
+  }
+  
+  .slogan-head {
+    position: absolute;
+    top: 60%;
+    left: 5%;
+    transform: translateY(-50%);
+    color: #74f0ea;
+    font-weight: bold;
+    padding: 10px 20px;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 50px;
+    z-index: 1;
+  }
+  
+  .title-slog h4 {
+    color: #2b2626;
+    margin: 0;
+    font-size: 25px;
+    text-align: right;
+  }
+  
+  .carousel-inner .carousel-item::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0,0.2); /* Adjust the opacity as desired */
+  }
+  
+  .carousel-control-prev,
+  .carousel-control-next {
+    width: 30px;
+  }
+  
+  .carousel-control-prev {
+    left: -30px;
+  }
+  
+  .carousel-control-next {
+    right: -30px;
+  }
+  
+  .carousel-item {
+    height: 550px; /* Adjust the height as desired */
+    position: relative;
+  }
+  .carousel-container {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .carousel-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.1); /* Adjust the background color and transparency as desired */
+    clip-path: ellipse(50% 100% at 0 50%);
+    z-index: 1;
+  }
+/* Footer styles */
+footer {
+  background-color: #ffaf40;
+  text-align: center;
+  padding: 20px;
+}
+
+footer p {
+  margin: 0;
+}
+
+.footer-left,
+.footer-right {
+  width: 50%;
+  float: left;
+}
+
+.footer-left h3,
+.footer-right h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: white;
+  font-family: 'Lugrasimo', cursive;
+}
+
+.footer-left p,
+.footer-right p {
+  color: #3d3d3d;
+  font-family: 'Courgette', cursive;
+}
+
+.clearfix {
+  clear: both;
+}
+
+.footer-text2 {
+  font-size: 10px;
+  color: #4b4b4b;
+  margin-bottom: 10px;
+}
+
+  /* Custom modal styling */
+.modal-header {
+  background-color: #f7b731;
+  font-family: 'Courgette', cursive;
+  color: #fff;
+  border-bottom: none; /* Remove the default bottom border */
+}
+
+.modal-body {
+  padding: 40px;
+}
+
+.modal-title {
+  color: black;
+}
+
+/* Additional styles for the login modal */
+#loginModal .modal-dialog {
+  max-width: 400px; /* Set a fixed width for the login modal */
+}
+
+#loginModal .modal-content {
+  border-radius: 10px; /* Rounded corners for the modal content */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3); /* Add a shadow effect */
+}
+
+#loginModal .form-group label {
+  color: #333;
+}
+
+#loginModal .btn-primary {
+  background-color: #f7b731; /* Change the login button color */
+  border: none;
+  font-family: 'Courgette', cursive;
+  color: black;
+}
+
+#loginModal .btn-primary:hover {
+  background-color: #f6e58d; /* Darker color on hover */
+}
+
+.divider{
+  text-align: center;
+  color: #888888;
+  font-size: x-small;
+ }
+
+
+/* Additional styles for the register modal */
+#registerModal .modal-body {
+  background-color: #f9f9f9; /* Set a light background color for register modal */
+}
+
+#registerModal .modal-dialog {
+  max-width: 400px; /* Set a fixed width for the register modal */
+}
+
+#registerModal .modal-content {
+  border-radius: 10px; /* Rounded corners for the modal content */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3); /* Add a shadow effect */
+}
+
+#registerModal .form-group label {
+  color: #333;
+}
+
+#registerModal .btn-primary {
+  background-color: #f7b731; /* Change the register button color */
+  border: none;
+  font-family: 'Courgette', cursive;
+  color: black;
+}
+
+#registerModal .btn-primary:hover {
+  background-color: #555; /* Darker color on hover */
+}
+

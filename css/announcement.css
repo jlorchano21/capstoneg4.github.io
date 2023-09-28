@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Ubuntu&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+    
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-image: url('../picture/annbg.png');
+      background-size: cover;
+    }
+    
+    /* Heading styles */
+    h1 {
+      color: black;
+      
+      font-size: 45px;
+      margin-top: 150px;
+    }
+    
+    .main-heading {
+      text-align: center;
+      font-size: 50px;
+      font-weight: bold;
+      margin-top: 50px;
+    }
+    
+.announcement-heading {
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+  margin-top: 70px;
+  margin-bottom: 30px;
+  font-family: 'Courgette', cursive;
+}
+    
+/* Announcement container styles */
+.announcement-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.important-announcement {
+  flex-basis: calc(50% - 20px);
+  background-color: rgba(255, 255, 255, 0.6);
+  border: 1px solid #cccccc;
+  padding: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.other-container {
+  flex-basis: calc(50% - 20px);
+  background-color: rgba(255, 255, 255, 0.6);
+  border: 1px solid #cccccc;
+  padding: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+    /* Announcement content styles */
+    .announcement h2 {
+      color: black;
+      margin-top: 0;
+    }
+    
+    .announcement p {
+      color: black;
+      margin-bottom: 0;
+    }
+    
+    .announcement ul {
+      list-style-type: disc;
+      padding-left: 20px;
+    }
+    
+    .announcement li {
+      color: black;
+    }
+    
+    /* Responsive styles for tablets */
+    @media screen and (max-width: 768px) {
+      h1 {
+        font-size: 30px;
+        margin-top: 100px;
+      }
+      
+      .main-heading {
+        font-size: 40px;
+        margin-top: 30px;
+      }
+      
+      .announcement-heading {
+        font-size: 30px;
+        margin-top: 10px;
+        margin-bottom: 20px;
+      }
+      
+      .announcement {
+        flex-basis: calc(100% - 20px);
+      }
+    }
+    
+    /* Responsive styles for mobile */
+    @media screen and (max-width: 480px) {
+      h1 {
+        font-size: 24px;
+        margin-top: 80px;
+      }
+      
+      .main-heading {
+        font-size: 30px;
+        margin-top: 20px;
+      }
+      
+      .announcement-heading {
+        font-size: 24px;
+        margin-top: 10px;
+        margin-bottom: 15px;
+      }
+      
+      .announcement {
+        flex-basis: calc(100% - 10px);
+      }
+    }
+
+    .back-button {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      font-size: 20px;
+      background-color: black;
+      padding: 10px 20px;
+      border-radius: 5px;
+      color: #fff;
+      text-decoration: none;
+    }
+
+    
